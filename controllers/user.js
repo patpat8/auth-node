@@ -39,10 +39,6 @@ export const loginUser = async (req, res, next) => {
   }
 };
 
-export const getMyProfile = (req, res) => {
-  res.status(200).json({ success: true, user: req.user });
-};
-
 export const logoutUser = (req, res) => {
   res
     .status(200)
